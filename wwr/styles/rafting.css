@@ -1,0 +1,43 @@
+:root {
+    --blue: #1e90ff;
+    --black: #181818;
+    
+}
+h1 {
+    color: var(--blue);
+}
+p {
+    color: var(--black);
+}
+a {
+    text-decoration: none;
+}       
+ .hero {
+    position: relative;
+    text-align: center;
+    
+   
+}
+
+.hero h1 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1d3758bf;
+}
+
+.hero article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2d095467;
+
+}
+
+.hero img {
+    display: block;
+    width:100%;
+    height: auto;
+}
