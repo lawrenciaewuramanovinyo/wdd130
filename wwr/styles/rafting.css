@@ -1,0 +1,117 @@
+/* Define CSS variables for the color scheme */
+:root {
+    --primary-color: #3498db; /* Example primary color */
+    --secondary-color: #2ecc71; /* Example secondary color */
+    --text-color: #333; /* Example text color */
+    --background-color: #f4f4f4; /* Example background color */
+    --hero-overlay-color: rgba(0, 0, 0, 0.5); /* Overlay color for hero */
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+p {
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Remove underline from social media image links */
+.social-media a img {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Hero container styles */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: var(--hero-overlay-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 1rem;
+}
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Employee Profiles */
+figure {
+    text-align: center;
+    margin: 1rem;
+}
+
+figure img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+figure figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
